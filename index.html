@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="pt-MZ"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Rewards | Pesquisas Remuneradas</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Folha de estilo -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '556915953880317');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4179716432354886&ev=PageView&noscript=1" />
+</noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <!-- Header principal -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        <span class="g1">G</span>
+                        <span class="o1">o</span>
+                        <span class="o2">o</span>
+                        <span class="g2">g</span>
+                        <span class="l">l</span>
+                        <span class="e">e</span>
+                    </div>
+                    <div class="rewards-text">Rewards</div>
+                </div>
+            </div>
+
+            <div class="balance-container">
+                <div class="balance-card">
+                    <div class="balance-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#38B764" stroke-width="1.5"></path>
+                            <path d="M12 6V18" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M16.5 10H9.5C8.11929 10 7 8.88071 7 7.5C7 6.11929 8.11929 5 9.5 5H12" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M7.5 14H14.5C15.8807 14 17 15.1193 17 16.5C17 17.8807 15.8807 19 14.5 19H12" stroke="#38B764" stroke-width="1.5" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="balance-details">
+                        <div class="balance-label">SALDO</div>
+                        <div class="balance-amount-wrapper">
+                            <span class="balance-amount" id="balance">10000</span>
+                            <span class="balance-currency">Kz</span>
+                        </div>
+                    </div>
+                    <div class="balance-update-indicator" id="balanceIndicator">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 3.33337V12.6667" stroke="#38B764" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M12 8.66663L8 12.6666L4 8.66663" stroke="#38B764" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Página de boas-vindas -->
+            <section id="welcomePage" class="page welcome-page">
+                <div class="card welcome-card">
+                    <div class="card-emoji">🎁</div>
+                    <h1 class="welcome-title">Parabéns!</h1>
+                    <p class="welcome-subtitle">Você foi selecionado para o novo programa de pesquisas remuneradas!</p>
+                    <div class="welcome-value">
+                        <span class="welcome-value-label">Valor inicial:</span>
+                        <span class="welcome-value-amount">10.000 Kz</span>
+                    </div>
+                    <p class="welcome-description">
+                        Responda a algumas perguntas rápidas sobre seus hábitos e preferências em Angola e ganhe dinheiro real.
+                    </p>
+                    <button class="btn btn-primary" id="startButton">
+                        <span>Começar Agora</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16675 10H15.8334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M10.8334 5L15.8334 10L10.8334 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Página de perguntas -->
+            <section id="surveyPage" class="page survey-page hidden">
+                <div class="card survey-card">
+                    <div class="survey-progress-container">
+                        <div class="survey-progress-wrapper">
+                            <div class="survey-progress-bar" id="progressBar"></div>
+                        </div>
+                        <div class="survey-progress-text" id="progressText">Pergunta 1 de 5</div>
+                        <div class="survey-question-value" id="questionValue">Vale: 300 Kz</div>
+                    </div>
+
+                    <div class="survey-question-container">
+                        <h2 class="survey-question" id="questionText">Qual é a sua operadora de telefone móvel preferida em Angola?</h2>
+
+                        <div class="survey-options" id="optionsContainer">
+                            <!-- Opções serão inseridas via JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Página de conclusão -->
+            <section id="completionPage" class="page completion-page hidden">
+                <div class="card completion-card">
+                    <div class="card-emoji">🎉</div>
+                    <h2 class="completion-title">Pesquisa Concluída!</h2>
+                    <p class="completion-subtitle">Obrigado pela sua participação!</p>
+
+                    <div class="completion-balance-container">
+                        <div class="completion-balance-label">Seu saldo total</div>
+                        <div class="completion-balance-amount" id="finalBalance">0</div>
+                        <div class="completion-balance-currency">Kz</div>
+                    </div>
+
+                    <button class="btn btn-primary btn-large" id="withdrawButton" onclick="window.location.href='vsl.html'">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                     <path d="M18 14L12 20L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <span>Sacar Dinheiro</span>
+                </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-small">
+                        <span class="g1">G</span>
+                        <span class="o1">o</span>
+                        <span class="o2">o</span>
+                        <span class="g2">g</span>
+                        <span class="l">l</span>
+                        <span class="e">e</span>
+                    </div>
+                    <span class="footer-rewards">Rewards</span>
+                </div>
+
+                <div class="footer-description">
+                    O programa Google Rewards recompensa participantes por compartilharem suas opiniões e preferências, ajudando a melhorar produtos e serviços.
+                </div>
+
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Termos de Uso</a>
+                    <span class="footer-link-separator">•</span>
+                    <a href="#" class="footer-link">Política de Privacidade</a>
+                    <span class="footer-link-separator">•</span>
+                    <a href="#" class="footer-link">Ajuda</a>
+                </div>
+
+                <div class="footer-copyright">
+                    © <span id="currentYear">2025</span> Google LLC. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup de recompensa -->
+    <div class="reward-popup" id="rewardPopup">
+        <div class="reward-popup-content">
+            <div class="reward-popup-icon">💰</div>
+            <div class="reward-popup-amount" id="rewardAmount">+300 Kz</div>
+            <div class="reward-popup-text">Adicionado ao seu saldo!</div>
+        </div>
+        <div id="confettiCanvas" class="confetti-container"></div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+
+
+
+</body></html>
