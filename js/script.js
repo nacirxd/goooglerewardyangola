@@ -53,7 +53,7 @@ const surveyData = {
         {
             text: "Qual dessas marcas você confia mais?",
             options: [
-                { text: "Marcas locais angolanas", emoji: "🇲🇿" },
+                { text: "Marcas locais angolanas", emoji: "🇦🇴" },
                 { text: "Marcas internacionais conhecidas", emoji: "🌍" },
                 { text: "Depende do produto", emoji: "🤔" }
             ],
